@@ -9,7 +9,7 @@ export const useGptMessage = () => {
   const dispatch = useDispatch();
   const { quantityPreviousMessages, quantityPreviousMessagesAll, key } = useSelector((state) => state.setting.settings);
   const chats = useSelector((state) => state.chat.data);
-
+  console.log('привет')
   // Используем useRef для сохранения ссылки на cancelTokenSource между вызовами
   const cancelTokenSourceRef = useRef();
 

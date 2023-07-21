@@ -3,8 +3,10 @@ import {screenDetails} from "../hocs/screenDetails";
 import {SettingScreen} from "../screens/SettingScreen/SettingScreen";
 import {ChatScreen} from "../screens/ChatScreen/ChatScreen";
 import {ListsScreen} from "../screens/ListsScreen/ListsScreen";
+
 export const Navigate = () => {
 
+  console.log('привет');
   const Stack = createStackNavigator();
 
   const ChatScreenDetails = screenDetails(ChatScreen);
